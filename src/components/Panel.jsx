@@ -1,4 +1,4 @@
-export default function Panel({ title, children }) {
+export default function Panel({ title = "Untitled", children }) {
   return (
     <div className="panel">
       <h2>{title}</h2>

@@ -57,7 +57,7 @@ export default function App() {
   }
   function submit(e) {
     e.preventDefault();
-    setOrders([{ id: Date.now(), count: cartCount, total, name: customer.name }, ...orders]);
+    setOrders([{ id: Date.now(), count: cartCount, total, name: customer.name, time: new Date().toLocaleTimeString() }, ...orders]);
     setCart([]);
     setCoupon("");
     setStatus("success");
